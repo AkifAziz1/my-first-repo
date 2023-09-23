@@ -37,7 +37,7 @@ public class StudentUtil {
 
     public static void  findStudentsAndPrint() {
         String text = InputUtil.requireText("Type name, surname or class name");
-        Students [] result = findStudents("ad");
+        Students [] result = findStudents("nan");
         for(int i = 0; i<result.length; i++){
             System.out.println(result[i].getFullInfo());
         }
