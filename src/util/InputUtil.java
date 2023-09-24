@@ -13,7 +13,7 @@ public class InputUtil {
     }
     public static int requireNumber(String title){
         Scanner sc = new Scanner(System.in);
-        System.out.print(title );
+        System.out.print(title + ":");
         int answer = sc.nextInt();
         return answer;
     }

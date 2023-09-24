@@ -20,7 +20,7 @@ public class StudentUtil {
         }
         for (int i = 0; i < Config.students.length; i++) {
             Students st = Config.students[i];
-            System.out.println(st.getFullInfo());
+            System.out.println((i+1) + "" + st.getFullInfo()); // i+1 edirik, chunki mushteri bizden 0-ci indexi isteye bilmez
         }
     }
 
@@ -31,8 +31,10 @@ public class StudentUtil {
             System.out.println((i + 1) + ". Register");
             Config.students[i] = StudentUtil.fillStudent();
         }
-        System.out.println("Registration completed succsesfully");
-        StudentUtil.printAllRegisteredStudents();
+        System.out.println("Registration completed succsesfully:");
+        String s = "";
+        StudentUtil.printAllRegisteredStudents() ;
+        System.out.println(s);
     }
 
     public static void  findStudentsAndPrint() {
