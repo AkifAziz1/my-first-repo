@@ -25,16 +25,7 @@ public class Main {
             } else if (menu == 3) {
                 StudentUtil.findStudentsAndPrint();
             } else if (menu == 4) {
-                //PrintAllRegisteredstudents mothodunu chagiririg ki registr olunan telebeden birini suchib update ede bilsin
-                StudentUtil.printAllRegisteredStudents();// Her kesi chapa ver
-
-                int i = InputUtil.requireNumber("Nechenci adamda deyishiklik edeceksiniz?");//1
-
-                System.out.println("yeni melumatlari daxil edin:");
-                Students s = StudentUtil.fillStudent();//yeni melumati daxil et
-
-                //Config.students[i] = s;  // Burda gedirik PrintAllStudents methoduna chunki orda indeksle gostermemishik. Yenisi ashdagi setirde
-                Config.students[i-1] = s;
+                StudentUtil.updateStudents();
             }
         }
     }

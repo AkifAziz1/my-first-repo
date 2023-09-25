@@ -20,7 +20,7 @@ public class StudentUtil {
         }
         for (int i = 0; i < Config.students.length; i++) {
             Students st = Config.students[i];
-            System.out.println((i+1) + "" + st.getFullInfo()); // i+1 edirik, chunki mushteri bizden 0-ci indexi isteye bilmez
+            System.out.println((i+1) + ". " + st.getFullInfo()); // i+1 edirik, chunki mushteri bizden 0-ci indexi isteye bilmez
         }
     }
 
@@ -75,6 +75,18 @@ public class StudentUtil {
         };
         Config.students = students;
 
+    }public static void updateStudents(){
+        //PrintAllRegisteredstudents mothodunu chagiririg ki registr olunan telebeden birini suchib update ede bilsin
+        StudentUtil.printAllRegisteredStudents();// Her kesi chapa ver
+
+        int i = InputUtil.requireNumber("Nechenci adamda deyishiklik edeceksiniz?");//1
+
+        System.out.println("yeni melumatlari daxil edin:");
+        Students s = StudentUtil.fillStudent();//yeni melumati daxil et
+
+        //Config.students[i] = s;  // Burda gedirik PrintAllStudents methoduna chunki orda indeksle gostermemishik. Yenisi ashdagi setirde
+        // i-1 edirik ki, mushteri 1 daxil edende 0-ci indexe getsin
+        Config.students[i-1] = s; //
     }
 }
 
