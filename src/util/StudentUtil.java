@@ -88,13 +88,22 @@ public class StudentUtil {
 
         //Config.students[i] = s;  // Burda gedirik PrintAllStudents methoduna chunki orda indeksle gostermemishik. Yenisi ashdagi setirde
         // i-1 edirik ki, mushteri 1 daxil edende 0-ci indexe getsin
-        Students selectedStudent = Config.students[i-1];
+        Students selectedStudent = Config.students[i - 1];
         String changeParameters = InputUtil.requireText("Neleri deyishmek isteyirsiz? mes: name, suranme ");
 
-        selectedStudent.setName(InputUtil.requireText("Name"));
-        selectedStudent.setSurname(InputUtil.requireText("Surname"));
-        selectedStudent.setClassName(InputUtil.requireText("Class name"));
-        selectedStudent.setAge(InputUtil.requireNumber("Age"));
+        // Burda else if yazmirig ki, butun shertleri yoxlasin. sadece if ile yazilacaq
+        if (changeParameters.contains("'name'")) {
+            selectedStudent.setName(InputUtil.requireText("Name"));
+        }
+        if (changeParameters.contains("'surname'")) {
+            selectedStudent.setSurname(InputUtil.requireText("Surname"));
+        }
+        if (changeParameters.contains("'age'")) {
+            selectedStudent.setAge(InputUtil.requireNumber("Age"));
+        }
+        if (changeParameters.contains("'class name'")) {
+            selectedStudent.setClassName(InputUtil.requireText("Class name"));
+        }
 
     }
 }
