@@ -20,7 +20,7 @@ public class StudentUtil {
         }
         for (int i = 0; i < Config.students.length; i++) {
             Students st = Config.students[i];
-            System.out.println((i+1) + ". " + st.getFullInfo()); // i+1 edirik, chunki mushteri bizden 0-ci indexi isteye bilmez
+            System.out.println((i + 1) + ". " + st.getFullInfo()); // i+1 edirik, chunki mushteri bizden 0-ci indexi isteye bilmez
         }
     }
 
@@ -33,14 +33,14 @@ public class StudentUtil {
         }
         System.out.println("Registration completed succsesfully:");
         String s = "";
-        StudentUtil.printAllRegisteredStudents() ;
+        StudentUtil.printAllRegisteredStudents();
         System.out.println(s);
     }
 
-    public static void  findStudentsAndPrint() {
+    public static void findStudentsAndPrint() {
         String text = InputUtil.requireText("Type name, surname or class name");
-        Students [] result = findStudents(text);
-        for(int i = 0; i<result.length; i++){
+        Students[] result = findStudents(text);
+        for (int i = 0; i < result.length; i++) {
             System.out.println(result[i].getFullInfo());
         }
     }
@@ -57,7 +57,7 @@ public class StudentUtil {
         Students[] result = new Students[count];
         int found = 0;
         for (int i = 0; i < Config.students.length; i++) {
-            Students st = Config.students[ i];
+            Students st = Config.students[i];
             if (st.getName().contains(text) || st.getSurname().contains(text) || st.getClassName().contains(text)) {
                 result[found] = st;
                 found++;
@@ -67,26 +67,35 @@ public class StudentUtil {
     }
 
     public static void main(String[] args) {
-        Students [] students = {
-                new Students("ad1","soyad1",11,"9A"),
-                new Students("asd2","soyad1",11,"9A"),
-                new Students("aed1","soyasd1",11,"9A"),
-                new Students("ad1","soyad1",11,"9A")
+        Students[] students = {
+                new Students("ad1", "soyad1", 11, "9A"),
+                new Students("asd2", "soyad1", 11, "9A"),
+                new Students("aed1", "soyasd1", 11, "9A"),
+                new Students("ad1", "soyad1", 11, "9A")
         };
         Config.students = students;
 
-    }public static void updateStudents(){
+    }
+
+    public static void updateStudents() {
         //PrintAllRegisteredstudents mothodunu chagiririg ki registr olunan telebeden birini suchib update ede bilsin
         StudentUtil.printAllRegisteredStudents();// Her kesi chapa ver
 
         int i = InputUtil.requireNumber("Nechenci adamda deyishiklik edeceksiniz?");//1
 
         System.out.println("yeni melumatlari daxil edin:");
-        Students s = StudentUtil.fillStudent();//yeni melumati daxil et
+
 
         //Config.students[i] = s;  // Burda gedirik PrintAllStudents methoduna chunki orda indeksle gostermemishik. Yenisi ashdagi setirde
         // i-1 edirik ki, mushteri 1 daxil edende 0-ci indexe getsin
-        Config.students[i-1] = s; //
+        Students selectedStudent = Config.students[i-1];
+        String changeParameters = InputUtil.requireText("Neleri deyishmek isteyirsiz? mes: name, suranme ");
+
+        selectedStudent.setName(InputUtil.requireText("Name"));
+        selectedStudent.setSurname(InputUtil.requireText("Surname"));
+        selectedStudent.setClassName(InputUtil.requireText("Class name"));
+        selectedStudent.setAge(InputUtil.requireNumber("Age"));
+
     }
 }
 
