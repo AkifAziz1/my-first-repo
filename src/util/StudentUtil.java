@@ -77,7 +77,9 @@ public class StudentUtil {
 
     }
 
-    public static void updateStudents() {
+    /*Bu method birinci yolla, diger adin ustunden deyilde, yeni bir obyekt yaradib(yazilmish sehifeni atib, uzerine yeni sehife getirmek kimi)
+    update edirik*/
+    public static void updateStudentsWithNewObject() {
         //PrintAllRegisteredstudents mothodunu chagiririg ki registr olunan telebeden birini suchib update ede bilsin
         StudentUtil.printAllRegisteredStudents();// Her kesi chapa ver
 
@@ -85,9 +87,22 @@ public class StudentUtil {
 
         System.out.println("yeni melumatlari daxil edin:");
 
-
+        Students s = StudentUtil.fillStudent();
         //Config.students[i] = s;  // Burda gedirik PrintAllStudents methoduna chunki orda indeksle gostermemishik. Yenisi ashdagi setirde
         // i-1 edirik ki, mushteri 1 daxil edende 0-ci indexe getsin
+        Config.students[i - 1] = s;
+
+    }
+
+    // Bu method ikinci yolla, yeni obyekt yaratmadan (sehifede shecilmish yeri silib, ustune update ederek) update edirik
+    public static void updateStudentsWithSameObject() {
+        StudentUtil.printAllRegisteredStudents();// Her kesi chapa ver
+
+        int i = InputUtil.requireNumber("Nechenci adamda deyishiklik edeceksiniz?");//1
+
+        System.out.println("yeni melumatlari daxil edin:");
+
+
         Students selectedStudent = Config.students[i - 1];
         String changeParameters = InputUtil.requireText("Neleri deyishmek isteyirsiz? mes: name, suranme ");
 
