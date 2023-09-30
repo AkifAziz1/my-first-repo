@@ -17,10 +17,13 @@ public class Main {
                     "\n1. Register Student " +
                     "\n2. Show All Students" +
                     "\n3. Find Stuent" +
-                    "\n4. Update Student :" + "\n");
+                    "\n4. Update Student :" +
+                    "\n5. Exit" + "\n"); /* yeniden while'in ichine girmemek uchun Bize lazim olan emeliyyatlari yerine yetirdikden sonra exit edirik ve
+                                     sistem basha chatir*/
             MenuUtil.processMenu(menu);
         }
     }
+
     public static void showSuccessOperMessage() {
         System.out.println("operaration completed succsesfully:");
     }

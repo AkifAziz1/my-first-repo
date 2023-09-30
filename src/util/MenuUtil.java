@@ -16,6 +16,9 @@ public class MenuUtil {
             case 4:
                 StudentUtil.updateStudentsWithNewObject();/* Update Student uchun iki eded ishlek method yaratdig. biri yeni obyekt yaratmaqla, digeri ise obyekt yaratmadan
                  ishini gorur. hansini istesek (eyni zamanda olmamaq sherti ile) istifade ede bilerik*/
+            case 5:
+                System.out.println("Sistem baha chatdi");
+                System.exit(0);// bize lazim olan ishelri
         }
     }
 }
