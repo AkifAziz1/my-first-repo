@@ -21,6 +21,9 @@ public class Main {
             MenuUtil.processMenu(menu);
         }
     }
+    public static void showSuccessOperMessage() {
+        System.out.println("operaration completed succsesfully:");
+    }
 }
 
 

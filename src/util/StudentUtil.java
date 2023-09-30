@@ -1,6 +1,7 @@
 package util;
 
 import Ikinci_Ay_Telimi.Config;
+import Ikinci_Ay_Telimi.Main;
 import beans.Students;
 
 public class StudentUtil {
@@ -31,7 +32,7 @@ public class StudentUtil {
             System.out.println((i + 1) + ". Register");
             Config.students[i] = StudentUtil.fillStudent();
         }
-        System.out.println("Registration completed succsesfully:");
+        Main.showSuccessOperMessage();// Operation completed successfully
         String s = "";
         StudentUtil.printAllRegisteredStudents();
         System.out.println(s);
@@ -64,17 +65,6 @@ public class StudentUtil {
             }
         }
         return result;
-    }
-
-    public static void main(String[] args) {
-        Students[] students = {
-                new Students("ad1", "soyad1", 11, "9A"),
-                new Students("asd2", "soyad1", 11, "9A"),
-                new Students("aed1", "soyasd1", 11, "9A"),
-                new Students("ad1", "soyad1", 11, "9A")
-        };
-        Config.students = students;
-
     }
 
     /*Bu method birinci yolla, diger adin ustunden deyilde, yeni bir obyekt yaradib(yazilmish sehifeni atib, uzerine yeni sehife getirmek kimi)
