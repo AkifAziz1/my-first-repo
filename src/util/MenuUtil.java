@@ -18,7 +18,7 @@ public class MenuUtil {
                  ishini gorur. hansini istesek (eyni zamanda olmamaq sherti ile) istifade ede bilerik*/
             case 5:
                 System.out.println("Sistem baha chatdi");
-                System.exit(0);// bize lazim olan ishelri
+                System.exit(0);
         }
     }
 }
