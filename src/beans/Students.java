@@ -10,7 +10,7 @@ public class Students {
     public Students() {
     }
 
-    public Students( String name, String surname , int age, String clasName){
+    public Students(String name, String surname, int age, String clasName) {
         this.name = name;
         this.surname = surname;
         this.age = age;
@@ -44,10 +44,12 @@ public class Students {
     public String getClassName() {
         return className;
     }
-    public void setClassName(String className){
+
+    public void setClassName(String className) {
         this.className = className;
     }
-    public String getFullInfo(){
+
+    public String getFullInfo() {
         return (this.getName() + " " + this.getSurname() + " " + this.getAge() + " " + this.getClassName());
     }
 }

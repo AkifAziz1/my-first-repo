@@ -11,7 +11,8 @@ public class InputUtil {
 
         return answer;
     }
-    public static int requireNumber(String title){
+
+    public static int requireNumber(String title) {
         Scanner sc = new Scanner(System.in);
         System.out.print(title + ":");
         int answer = sc.nextInt();
