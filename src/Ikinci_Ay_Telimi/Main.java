@@ -22,6 +22,8 @@ public class Main {
                                      sistem basha chatir*/
             MenuUtil.processMenu(menu);
         }
+        // Push olmagi yoxlamag uchun
+        //yazilan yazi
 
     }
 
