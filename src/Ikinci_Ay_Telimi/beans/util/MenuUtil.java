@@ -1,4 +1,4 @@
-package util;
+package Ikinci_Ay_Telimi.beans.util;
 
 public class MenuUtil {
     public static void processMenu(int selectedMenu) {

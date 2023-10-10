@@ -1,4 +1,4 @@
-package util;
+package Ikinci_Ay_Telimi.beans.util;
 
 import java.util.Scanner;
 

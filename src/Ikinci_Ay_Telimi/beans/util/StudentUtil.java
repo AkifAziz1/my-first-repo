@@ -1,8 +1,8 @@
-package util;
+package Ikinci_Ay_Telimi.beans.util;
 
 import Ikinci_Ay_Telimi.Config;
 import Ikinci_Ay_Telimi.Main;
-import beans.Students;
+import Ikinci_Ay_Telimi.beans.Students;
 
 public class StudentUtil {
     public static Students fillStudent() {

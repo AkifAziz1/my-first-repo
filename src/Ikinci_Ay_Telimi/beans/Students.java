@@ -1,4 +1,4 @@
-package beans;
+package Ikinci_Ay_Telimi.beans;
 
 public class Students {
     private String name;

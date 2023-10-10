@@ -1,6 +1,6 @@
 package Ikinci_Ay_Telimi;
 
-import beans.Students;
+import Ikinci_Ay_Telimi.beans.Students;
 
 
 public class Config {

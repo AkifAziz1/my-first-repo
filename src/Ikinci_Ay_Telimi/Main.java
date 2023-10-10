@@ -1,11 +1,7 @@
 package Ikinci_Ay_Telimi;
 
-import beans.Students;
-import util.InputUtil;
-import util.MenuUtil;
-import util.StudentUtil;
-
-import java.util.Scanner;
+import Ikinci_Ay_Telimi.beans.util.InputUtil;
+import Ikinci_Ay_Telimi.beans.util.MenuUtil;
 
 public class Main {
 
