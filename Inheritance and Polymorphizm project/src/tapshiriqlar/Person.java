@@ -5,14 +5,15 @@ public class Person {
     public String surname;
     public int age;
 
-    public Person(){
+    public Person() {
         super();
     }
-    public Person(String name){
+
+    public Person(String name) {
         this.name = name;
     }
 
-    public void methodInPerson(){
+    public void methodInPerson() {
         System.out.println("Men person classindan gelirem");
     }
 }
