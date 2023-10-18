@@ -12,7 +12,7 @@ class Toreyen_1 extends EsasSinif {
     }
 }
 
-class Toreyen_2  extends EsasSinif {
+class Toreyen_2 extends EsasSinif {
     public void Yaz() {
         System.out.println("Toreyen_2 sinifi ");
     }
@@ -36,7 +36,7 @@ class Toreyen_3 extends EsasSinif {
             Yaz(t1);
             Yaz(t2);
             Yaz(t3);
-
+            t1.Yaz();
         }
     }
 }

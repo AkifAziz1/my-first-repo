@@ -20,26 +20,32 @@ public class Test3 {
     }
 
     public String getUrunadi() {
+
         return urunadi;
     }
 
     public void setUrunadi(String urunadi) {
+
         this.urunadi = urunadi;
     }
 
     public String getMarka() {
+
         return marka;
     }
 
     public void setMarka(String marka) {
+
         this.marka = marka;
     }
 
     public String getModel() {
+
         return model;
     }
 
     public void setModel(String model) {
+
         this.model = model;
     }
 
