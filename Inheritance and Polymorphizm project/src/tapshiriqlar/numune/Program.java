@@ -22,7 +22,7 @@ class Toreyen_3 extends EsasSinif {
     public void Yaz() {
         System.out.println("Toreyen_3 sinifi ");
     }
-
+  
     public class Program {
         public static void Yaz(EsasSinif t) {
             t.Yaz();
