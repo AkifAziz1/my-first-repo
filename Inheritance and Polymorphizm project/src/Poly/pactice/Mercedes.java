@@ -1,4 +1,4 @@
 package Poly.pactice;
 
-public class Mercedes {
+public class Mercedes extends Car{
 }
