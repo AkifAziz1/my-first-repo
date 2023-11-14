@@ -4,19 +4,11 @@ import java.util.Random;
 
 public class Car {
 
-    public int a = 2;
+         double int count;
+        void errors() {}
+        static String limit;
 
-    private int numForks;
-
-    public static void main(String[] args) {
-        int numKnives;
-        System.out.print("""
-                "# forks = " + numForks +
-                 " # knives = " + numKnives +
-                # cups = 0""");
+        public void drive() {
+            System.out.println("Car Drive ");
+        }
     }
-
-    public void drive() {
-        System.out.println("Car Drive ");
-    }
-}
