@@ -1,5 +1,5 @@
 package Poly.pactice;
-System.gc;
+
 import java.util.Random;
 
 public class Car {
