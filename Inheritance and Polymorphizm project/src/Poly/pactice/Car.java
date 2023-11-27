@@ -10,7 +10,7 @@ public class Car {
             System.out.print("Plan A");
         } else {
             if (plan == 2) System.out.print("Plan B");
-        } else System.out.print("Plan C");
+        }
     }
 
 
