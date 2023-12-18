@@ -11,6 +11,7 @@ public class MulakatSorulari {
 
 
 
+
     public static void main(String[] args) {
         String val1 = "123";
         String val2 = "456";
