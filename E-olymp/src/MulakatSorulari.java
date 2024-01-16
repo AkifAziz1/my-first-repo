@@ -3,6 +3,8 @@ public class MulakatSorulari {
     public String Sum(String val1, String val2){  //bu metoda iki tane tam sayi string olarak gonderilecek ve bu sayilarin geri gonderilmesi gerekiyor
         int convertVal1= Integer.parseInt(val1);
         int convertVal2= Integer.parseInt(val2);
+        var a = 5;
+        var b = "sad";
 
         int sum = convertVal1 + convertVal2;
         System.out.println(sum);
